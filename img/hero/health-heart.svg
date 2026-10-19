@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-label="Вред здоровью">
+  <defs>
+    <linearGradient id="hl-heart" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E86A5E"/><stop offset="1" stop-color="#C0392B"/>
+    </linearGradient>
+    <linearGradient id="hl-green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#43B873"/><stop offset="1" stop-color="#1E5C38"/>
+    </linearGradient>
+    <linearGradient id="hl-doc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EFEAD6"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="120" cy="178" rx="86" ry="13" fill="#13321F" opacity=".10"/>
+  <!-- медкарта -->
+  <g transform="rotate(-5 84 108)">
+    <rect x="42" y="56" width="86" height="108" rx="10" fill="url(#hl-doc)" stroke="#D9D4BE" stroke-width="1.5"/>
+    <rect x="42" y="56" width="86" height="22" rx="10" fill="url(#hl-green)"/>
+    <rect x="42" y="70" width="86" height="8" fill="url(#hl-green)"/>
+    <circle cx="64" cy="94" r="8" fill="none" stroke="#2F8156" stroke-width="3"/>
+    <line x1="64" y1="89" x2="64" y2="99" stroke="#2F8156" stroke-width="3" stroke-linecap="round"/>
+    <line x1="59" y1="94" x2="69" y2="94" stroke="#2F8156" stroke-width="3" stroke-linecap="round"/>
+    <rect x="80" y="90" width="38" height="5" rx="2.5" fill="#C9C3A8"/>
+    <rect x="54" y="110" width="62" height="5" rx="2.5" fill="#E0DAC2"/>
+    <rect x="54" y="121" width="62" height="5" rx="2.5" fill="#E0DAC2"/>
+    <rect x="54" y="132" width="44" height="5" rx="2.5" fill="#E0DAC2"/>
+    <!-- пульс на карте -->
+    <path d="M54 150 L66 150 L72 140 L80 158 L88 146 L94 150 L118 150" fill="none" stroke="#C0392B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- сердце с пульсом -->
+  <g transform="translate(96 -8)">
+    <path d="M84 96 C70 78 44 82 44 106 C44 126 70 142 84 152 C98 142 124 126 124 106 C124 82 98 78 84 96 Z" fill="url(#hl-heart)" transform="translate(26 -10) scale(1.06)"/>
+    <path d="M84 96 C70 78 44 82 44 106 C44 126 70 142 84 152 C98 142 124 126 124 106 C124 82 98 78 84 96 Z" fill="#FFFFFF" opacity=".12" transform="translate(26 -10) scale(1.06)"/>
+    <path d="M58 108 L76 108 L84 92 L94 122 L102 108 L130 108" fill="none" stroke="#FDFAF0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" transform="translate(18 -2)"/>
+  </g>
+  <!-- крест -->
+  <g transform="rotate(12 196 56)">
+    <rect x="188" y="36" width="16" height="40" rx="5" fill="url(#hl-green)"/>
+    <rect x="176" y="48" width="40" height="16" rx="5" fill="url(#hl-green)"/>
+  </g>
+</svg>

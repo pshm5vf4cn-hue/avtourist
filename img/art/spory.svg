@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Спор водителя со страховой компанией">
+  <defs>
+    <linearGradient id="ks-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F8156"/><stop offset="1" stop-color="#13321F"/>
+    </linearGradient>
+    <linearGradient id="ks-bld" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E8E4D2"/><stop offset="1" stop-color="#CFC9A9"/>
+    </linearGradient>
+    <linearGradient id="ks-paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EFEAD6"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="300" rx="16" fill="url(#ks-bg)"/>
+  <circle cx="420" cy="40" r="90" fill="#FFFFFF" opacity=".05"/>
+
+  <!-- здание страховой -->
+  <g transform="translate(262 56)">
+    <rect x="0" y="52" width="170" height="150" rx="8" fill="url(#ks-bld)"/>
+    <rect x="-10" y="36" width="190" height="22" rx="8" fill="#2F8156"/>
+    <text x="85" y="52" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="800" letter-spacing="2" fill="#F6F3E8">СТРАХОВАЯ</text>
+    <g fill="#2F8156" opacity=".65">
+      <rect x="16" y="74" width="26" height="22" rx="4"/><rect x="56" y="74" width="26" height="22" rx="4"/><rect x="96" y="74" width="26" height="22" rx="4"/><rect x="136" y="74" width="26" height="22" rx="4"/>
+      <rect x="16" y="110" width="26" height="22" rx="4"/><rect x="56" y="110" width="26" height="22" rx="4"/><rect x="96" y="110" width="26" height="22" rx="4"/><rect x="136" y="110" width="26" height="22" rx="4"/>
+      <rect x="16" y="146" width="26" height="22" rx="4"/><rect x="56" y="146" width="26" height="22" rx="4"/><rect x="96" y="146" width="26" height="22" rx="4"/><rect x="136" y="146" width="26" height="22" rx="4"/>
+    </g>
+    <rect x="70" y="182" width="30" height="20" fill="#13321F"/>
+  </g>
+
+  <!-- водитель -->
+  <g transform="translate(64 108)">
+    <rect x="0" y="76" width="56" height="92" rx="18" fill="#1A4A32"/>
+    <circle cx="28" cy="48" r="25" fill="#F2C9A2"/>
+    <path d="M3 44 Q2 19 28 18 Q54 19 53 44 Q48 30 38 28 Q32 27 28 28 Q24 27 18 28 Q8 30 3 44 Z" fill="#3A2C22"/>
+    <circle cx="19" cy="50" r="2.8" fill="#23282C"/><circle cx="37" cy="50" r="2.8" fill="#23282C"/>
+    <path d="M19 60 Q28 66 37 60" fill="none" stroke="#B4703F" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M56 108 Q86 100 96 78" fill="none" stroke="#1A4A32" stroke-width="14" stroke-linecap="round"/>
+  </g>
+
+  <!-- претензия летит из рук к страховой -->
+  <g transform="translate(158 96) rotate(-8)">
+    <rect x="0" y="0" width="96" height="120" rx="10" fill="url(#ks-paper)"/>
+    <path d="M12 12 L24 15 L24 28 Q24 36 18 39 Q12 36 12 28 Z" fill="#2F8156"/>
+    <text x="32" y="26" font-family="Arial, sans-serif" font-size="11.5" font-weight="800" fill="#1E5C38">СИЛА ПРАВА</text>
+    <text x="48" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#C0392B">ПРЕТЕНЗИЯ</text>
+    <rect x="14" y="60" width="68" height="5" rx="2.5" fill="#D9D4BE"/>
+    <rect x="14" y="72" width="68" height="5" rx="2.5" fill="#E0DAC2"/>
+    <rect x="14" y="84" width="52" height="5" rx="2.5" fill="#E0DAC2"/>
+    <rect x="14" y="96" width="60" height="5" rx="2.5" fill="#E0DAC2"/>
+  </g>
+  <path d="M140 150 Q180 128 224 122" fill="none" stroke="#F5C542" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 12"/>
+  <path d="M212 112 L228 120 L214 132" fill="none" stroke="#F5C542" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- знак вопроса -->
+  <g transform="translate(216 190)">
+    <circle cx="24" cy="24" r="24" fill="#F5C542"/>
+    <text x="24" y="33" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#5E3A1D">?</text>
+  </g>
+</svg>

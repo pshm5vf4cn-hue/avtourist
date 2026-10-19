@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 320" role="img" aria-label="ООО «СИЛА ПРАВА»">
+  <defs>
+    <linearGradient id="sp-shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1e4fd6"/>
+      <stop offset=".45" stop-color="#1e4fd6"/>
+      <stop offset=".55" stop-color="#5b86ee"/>
+      <stop offset=".65" stop-color="#1e4fd6"/>
+      <stop offset="1" stop-color="#1e4fd6"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1.2 0; 1.2 0" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="sp-text" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e9e2cd"/>
+      <stop offset=".5" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e9e2cd"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0; 1 0" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+    <g id="sp-half">
+      <path d="M224,172 C242,166 252,152 252,134 C252,120 246,112 236,110 L246,100 C258,102 266,110 268,120 L282,116 L270,128 C270,136 266,144 258,150 C248,160 236,168 224,172 Z"/>
+      <path d="M226,196 C278,200 302,226 304,258 C306,284 294,304 270,314 C282,296 282,272 270,252 C258,232 242,218 224,214 Z"/>
+      <path d="M302,258 C302,282 292,300 274,312" fill="none" stroke-width="7" stroke-linecap="round"/>
+      <path d="M292,238 C292,262 280,282 260,294" fill="none" stroke-width="7" stroke-linecap="round"/>
+      <path d="M276,220 C276,244 264,264 244,274" fill="none" stroke-width="7" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <path fill="url(#sp-shine)" d="M200,12 C134,24 98,46 96,98 L96,182 C96,248 146,288 200,308 C254,288 304,248 304,182 L304,98 C302,46 266,24 200,12 Z"/>
+
+  <g fill="#ffffff" stroke="#ffffff">
+    <use href="#sp-half"/>
+    <use href="#sp-half" transform="translate(400,0) scale(-1,1)"/>
+    <path d="M200,146 C186,160 180,180 180,205 C180,228 188,244 200,252 C212,244 220,228 220,205 C220,180 214,160 200,146 Z"/>
+    <path d="M200,248 C192,262 186,272 178,278 M200,248 C200,264 200,276 200,286 M200,248 C208,262 214,272 222,278" fill="none" stroke-width="7" stroke-linecap="round"/>
+    <path d="M196,58 L196,30 Q200,20 204,30 L204,58 Z"/>
+    <path d="M176,58 L224,58 Q228,58 228,62 Q228,66 224,66 L176,66 Q172,66 172,62 Q172,58 176,58 Z"/>
+    <rect x="197" y="66" width="6" height="10" rx="2"/>
+    <circle cx="200" cy="82" r="4.5"/>
+    <path d="M200,96 L208,105 L200,114 L192,105 Z"/>
+  </g>
+
+  <rect x="350" y="70" width="5" height="180" fill="#3d6de0"/>
+
+  <text x="398" y="196" font-family="'Arial Black','Arial',sans-serif" font-weight="900" font-size="58" letter-spacing="1" fill="url(#sp-text)">СИЛА ПРАВА</text>
+</svg>

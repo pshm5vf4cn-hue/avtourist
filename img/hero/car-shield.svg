@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-label="Автомобиль под защитой">
+  <defs>
+    <linearGradient id="cs-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#43B873"/><stop offset="1" stop-color="#1E5C38"/>
+    </linearGradient>
+    <linearGradient id="cs-glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#DFF3E7"/><stop offset="1" stop-color="#9CCFB4"/>
+    </linearGradient>
+    <linearGradient id="cs-shield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F8156"/><stop offset="1" stop-color="#13321F"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="118" cy="172" rx="92" ry="13" fill="#13321F" opacity=".10"/>
+  <!-- щит за машиной -->
+  <g transform="rotate(-8 176 78)">
+    <path d="M176 30 L214 42 L214 82 Q214 106 176 120 Q138 106 138 82 L138 42 Z" fill="url(#cs-shield)"/>
+    <path d="M176 38 L206 47 L206 80 Q206 99 176 111 Q146 99 146 80 L146 47 Z" fill="none" stroke="#43D47D" stroke-width="2" opacity=".5"/>
+  </g>
+  <!-- машина -->
+  <g>
+    <path d="M40 128 Q42 112 62 108 L78 88 Q84 80 96 80 L138 80 Q150 80 156 88 L170 106 Q190 110 192 124 L192 136 Q192 142 186 142 L48 142 Q40 142 40 136 Z" fill="url(#cs-body)"/>
+    <path d="M84 90 Q88 86 96 86 L112 86 L112 108 L70 108 Z" fill="url(#cs-glass)"/>
+    <path d="M120 86 L138 86 Q145 86 149 91 L159 106 L120 106 Z" fill="url(#cs-glass)"/>
+    <rect x="40" y="124" width="152" height="7" fill="#13321F" opacity=".22"/>
+    <circle cx="74" cy="142" r="15" fill="#23282C"/>
+    <circle cx="74" cy="142" r="7" fill="#8E9A90"/>
+    <circle cx="160" cy="142" r="15" fill="#23282C"/>
+    <circle cx="160" cy="142" r="7" fill="#8E9A90"/>
+    <rect x="182" y="118" width="9" height="6" rx="3" fill="#F5C542"/>
+    <rect x="42" y="118" width="9" height="6" rx="3" fill="#E86A5E"/>
+  </g>
+  <!-- галочка на щите -->
+  <path d="M158 74 L170 88 L196 58" fill="none" stroke="#F6F3E8" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

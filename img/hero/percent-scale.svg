@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-label="Весы: выплата против договора">
+  <defs>
+    <linearGradient id="pc-metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A6B4E"/><stop offset="1" stop-color="#173B28"/>
+    </linearGradient>
+    <linearGradient id="pc-coin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7D774"/><stop offset="1" stop-color="#E0A93B"/>
+    </linearGradient>
+    <linearGradient id="pc-paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EFEAD6"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="120" cy="178" rx="88" ry="13" fill="#13321F" opacity=".10"/>
+  <!-- стойка -->
+  <rect x="115" y="42" width="10" height="118" rx="5" fill="url(#pc-metal)"/>
+  <rect x="92" y="158" width="56" height="12" rx="6" fill="url(#pc-metal)"/>
+  <circle cx="120" cy="42" r="8" fill="#2F8156"/>
+  <!-- балка -->
+  <g transform="rotate(-7 120 46)">
+    <rect x="36" y="42" width="168" height="8" rx="4" fill="url(#pc-metal)"/>
+    <!-- левая чаша: договор -->
+    <line x1="52" y1="50" x2="40" y2="96" stroke="#55604F" stroke-width="2.5"/>
+    <line x1="52" y1="50" x2="64" y2="96" stroke="#55604F" stroke-width="2.5"/>
+    <path d="M28 96 Q52 112 76 96" fill="#2F8156"/>
+    <g transform="rotate(-8 52 78)">
+      <rect x="30" y="52" width="44" height="42" rx="5" fill="url(#pc-paper)" stroke="#D9D4BE" stroke-width="1.5"/>
+      <rect x="36" y="60" width="32" height="4" rx="2" fill="#C9C3A8"/>
+      <rect x="36" y="68" width="24" height="4" rx="2" fill="#E0DAC2"/>
+      <rect x="36" y="76" width="28" height="4" rx="2" fill="#E0DAC2"/>
+    </g>
+    <!-- правая чаша: монеты (ниже — тяжелее) -->
+    <line x1="188" y1="50" x2="176" y2="112" stroke="#55604F" stroke-width="2.5"/>
+    <line x1="188" y1="50" x2="200" y2="112" stroke="#55604F" stroke-width="2.5"/>
+    <path d="M164 112 Q188 128 212 112" fill="#2F8156"/>
+    <ellipse cx="188" cy="104" rx="17" ry="6" fill="#B9831F"/>
+    <ellipse cx="188" cy="98" rx="17" ry="6" fill="url(#pc-coin)"/>
+    <ellipse cx="188" cy="92" rx="17" ry="6" fill="#F7D774"/>
+  </g>
+  <!-- значок процента над стойкой -->
+  <circle cx="120" cy="20" r="17" fill="#2F8156"/>
+  <circle cx="120" cy="20" r="17" fill="none" stroke="#43D47D" stroke-width="2" opacity=".5"/>
+  <text x="120" y="27" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#F6F3E8">%</text>
+</svg>

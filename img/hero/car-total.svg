@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-label="Тотальная гибель автомобиля">
+  <defs>
+    <linearGradient id="ct-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5B7A67"/><stop offset="1" stop-color="#2E4A3A"/>
+    </linearGradient>
+    <linearGradient id="ct-tag" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7D774"/><stop offset="1" stop-color="#E0A93B"/>
+    </linearGradient>
+    <linearGradient id="ct-tape" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F5C542"/><stop offset="1" stop-color="#E0A93B"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="118" cy="174" rx="92" ry="13" fill="#13321F" opacity=".10"/>
+  <!-- оградительная лента -->
+  <g transform="rotate(-8 120 62)">
+    <rect x="30" y="52" width="180" height="16" rx="4" fill="url(#ct-tape)"/>
+    <g fill="#13321F" opacity=".8">
+      <path d="M40 52 L52 52 L42 68 L30 68 Z"/>
+      <path d="M66 52 L78 52 L68 68 L56 68 Z"/>
+      <path d="M92 52 L104 52 L94 68 L82 68 Z"/>
+      <path d="M118 52 L130 52 L120 68 L108 68 Z"/>
+      <path d="M144 52 L156 52 L146 68 L134 68 Z"/>
+      <path d="M170 52 L182 52 L172 68 L160 68 Z"/>
+      <path d="M196 52 L208 52 L198 68 L186 68 Z"/>
+    </g>
+  </g>
+  <!-- машина (присевшая) -->
+  <g>
+    <path d="M46 140 Q48 124 68 120 L82 102 Q88 94 100 94 L140 94 Q152 94 158 102 L170 118 Q188 122 190 134 L190 146 Q190 152 184 152 L54 152 Q46 152 46 146 Z" fill="url(#ct-body)"/>
+    <path d="M88 104 Q92 100 100 100 L114 100 L114 120 L74 120 Z" fill="#B9CFC2" opacity=".8"/>
+    <path d="M122 100 L140 100 Q147 100 151 105 L160 118 L122 118 Z" fill="#B9CFC2" opacity=".8"/>
+    <!-- трещина на капоте -->
+    <path d="M60 128 L72 132 L66 138 L80 140" fill="none" stroke="#13321F" stroke-width="2.2" stroke-linecap="round" opacity=".7"/>
+    <circle cx="76" cy="152" r="14" fill="#23282C" opacity=".85"/>
+    <circle cx="76" cy="152" r="6.5" fill="#6E7A70"/>
+    <circle cx="160" cy="152" r="14" fill="#23282C" opacity=".85"/>
+    <circle cx="160" cy="152" r="6.5" fill="#6E7A70"/>
+  </g>
+  <!-- бирка ТОТАЛ -->
+  <g transform="rotate(10 186 84)">
+    <path d="M186 62 L186 74" stroke="#8A5A33" stroke-width="4" stroke-linecap="round"/>
+    <rect x="152" y="74" width="68" height="36" rx="9" fill="url(#ct-tag)"/>
+    <circle cx="186" cy="76" r="4.5" fill="#FDFAF0"/>
+    <text x="186" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="14.5" font-weight="800" letter-spacing="1" fill="#5E3A1D">ТОТАЛ</text>
+  </g>
+</svg>

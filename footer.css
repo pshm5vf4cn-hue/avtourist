@@ -1,0 +1,143 @@
+/* ---------- ПОДВАЛ: тёмный, колонки (подключается после design.css) ---------- */
+.site-footer {
+  background: linear-gradient(180deg, #1B3327, #14261C);
+  color: #DCE8E0;
+  margin-top: 32px;
+  padding: 32px 0 0;
+  border-top: none;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 28px;
+  padding-bottom: 28px;
+}
+
+.footer-about p {
+  color: #9DB8A8;
+  font-size: .92rem;
+  margin-top: 12px;
+}
+
+.footer-about a,
+.footer-bottom a {
+  color: inherit;
+}
+
+.footer-contacts a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+
+.footer-contacts a:hover {
+  color: #43B873;
+}
+
+/* логотип на тёмном фоне: перекрываем тёмный градиент из design.css светлым */
+.site-footer .logo-text b {
+  background: linear-gradient(93deg, #E8F5EC 0%, #8FD3AB 50%, #E8F5EC 100%);
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.site-footer .logo-text small {
+  color: #B9CFC2;
+}
+
+.site-footer .logo-project {
+  color: #7E958A;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, .08);
+  border-radius: 50%;
+  color: #DCE8E0;
+  transition: background .22s ease, color .22s ease;
+}
+
+.footer-social a:hover {
+  background: #43B873;
+  color: #fff;
+}
+
+.footer-social svg {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-col h3 {
+  font-size: .78rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 14px;
+}
+
+.footer-col a {
+  display: block;
+  color: #9DB8A8;
+  text-decoration: none;
+  padding: 5px 0;
+  font-size: .92rem;
+  transition: color .2s ease;
+}
+
+.footer-col a:hover {
+  color: #43B873;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, .08);
+  padding: 16px 0 20px;
+  margin-top: 0;
+  text-align: left;
+}
+
+.footer-bottom p {
+  color: #7E958A;
+  font-size: .8rem;
+  margin: 0 0 6px;
+}
+
+.footer-bottom a {
+  color: #9DB8A8;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #43B873;
+}
+
+@media (max-width: 960px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+
+  .footer-about {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

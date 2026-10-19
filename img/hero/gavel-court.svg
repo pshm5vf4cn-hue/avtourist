@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-label="Судебный молоток">
+  <defs>
+    <linearGradient id="gv-wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A5A33"/><stop offset="1" stop-color="#5E3A1D"/>
+    </linearGradient>
+    <linearGradient id="gv-book" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F8156"/><stop offset="1" stop-color="#173B28"/>
+    </linearGradient>
+    <linearGradient id="gv-block" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A6B4E"/><stop offset="1" stop-color="#1A4A32"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="120" cy="178" rx="92" ry="13" fill="#13321F" opacity=".10"/>
+  <!-- книга законов -->
+  <rect x="58" y="120" width="128" height="42" rx="8" fill="url(#gv-book)"/>
+  <rect x="58" y="120" width="14" height="42" rx="7" fill="#13321F" opacity=".45"/>
+  <rect x="80" y="132" width="86" height="6" rx="3" fill="#F6F3E8" opacity=".85"/>
+  <rect x="80" y="144" width="60" height="6" rx="3" fill="#F6F3E8" opacity=".55"/>
+  <line x1="122" y1="120" x2="122" y2="162" stroke="#13321F" stroke-width="3" opacity=".35"/>
+  <!-- колода -->
+  <rect x="96" y="98" width="52" height="20" rx="6" fill="url(#gv-block)"/>
+  <rect x="96" y="98" width="52" height="7" rx="3.5" fill="#43B873" opacity=".5"/>
+  <!-- молоток -->
+  <g transform="rotate(-24 150 70)">
+    <rect x="146" y="34" width="10" height="76" rx="5" fill="url(#gv-wood)"/>
+    <g transform="rotate(90 151 44)">
+      <rect x="118" y="26" width="66" height="36" rx="10" fill="url(#gv-block)"/>
+      <rect x="118" y="26" width="66" height="12" rx="6" fill="#43B873" opacity=".45"/>
+      <rect x="112" y="30" width="10" height="28" rx="5" fill="#13321F" opacity=".5"/>
+      <rect x="180" y="30" width="10" height="28" rx="5" fill="#13321F" opacity=".5"/>
+    </g>
+  </g>
+  <!-- звук удара -->
+  <g stroke="#2F8156" stroke-width="4" stroke-linecap="round" opacity=".7">
+    <path d="M196 66 L208 56"/>
+    <path d="M202 84 L218 80"/>
+  </g>
+</svg>

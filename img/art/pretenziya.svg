@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Бланк претензии в страховую от СИЛА ПРАВА">
+  <defs>
+    <linearGradient id="ap-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F8156"/><stop offset="1" stop-color="#13321F"/>
+    </linearGradient>
+    <linearGradient id="ap-paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EFEAD6"/>
+    </linearGradient>
+    <linearGradient id="ap-paper2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F9F6EA"/><stop offset="1" stop-color="#E6E0C8"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="300" rx="16" fill="url(#ap-bg)"/>
+  <circle cx="410" cy="250" r="100" fill="#000000" opacity=".08"/>
+
+  <!-- конверт позади -->
+  <g transform="rotate(6 340 120)">
+    <rect x="268" y="56" width="150" height="102" rx="10" fill="url(#ap-paper2)"/>
+    <path d="M268 68 L343 118 L418 68" fill="none" stroke="#C9C3A8" stroke-width="3"/>
+  </g>
+
+  <!-- бланк претензии -->
+  <g transform="rotate(-3 210 150)">
+    <rect x="96" y="34" width="216" height="232" rx="14" fill="url(#ap-paper)"/>
+    <rect x="108" y="46" width="192" height="208" rx="9" fill="none" stroke="#C9C3A8" stroke-width="1.6" opacity=".7"/>
+    <!-- шапка с логотипом -->
+    <path d="M124 60 L146 66 L146 88 Q146 101 135 107 Q124 101 124 88 Z" fill="#2F8156"/>
+    <path d="M130 72 L142 72 M130 81 L139 81" stroke="#F6F3E8" stroke-width="3" stroke-linecap="round"/>
+    <text x="156" y="76" font-family="Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="1" fill="#1E5C38">СИЛА</text>
+    <text x="156" y="93" font-family="Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="1" fill="#2F8156">ПРАВА</text>
+    <rect x="242" y="64" width="46" height="18" rx="9" fill="#EEF5F0" stroke="#2F8156" stroke-width="1.4"/>
+    <text x="265" y="77" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#1E5C38">БЛАНК</text>
+    <!-- текст -->
+    <rect x="124" y="120" width="160" height="7" rx="3.5" fill="#C9C3A8"/>
+    <rect x="124" y="135" width="172" height="6" rx="3" fill="#E0DAC2"/>
+    <rect x="124" y="148" width="164" height="6" rx="3" fill="#E0DAC2"/>
+    <rect x="124" y="161" width="146" height="6" rx="3" fill="#E0DAC2"/>
+    <rect x="124" y="174" width="158" height="6" rx="3" fill="#E0DAC2"/>
+    <!-- галочки требований -->
+    <circle cx="131" cy="202" r="8" fill="#2F8156"/>
+    <path d="M127 202 L130 205 L135 198" fill="none" stroke="#F6F3E8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="146" y="198" width="110" height="6" rx="3" fill="#E0DAC2"/>
+    <circle cx="131" cy="226" r="8" fill="#2F8156"/>
+    <path d="M127 226 L130 229 L135 222" fill="none" stroke="#F6F3E8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="146" y="222" width="92" height="6" rx="3" fill="#E0DAC2"/>
+    <!-- подпись -->
+    <path d="M124 248 Q140 240 158 246 T200 244" fill="none" stroke="#55604F" stroke-width="2.4" stroke-linecap="round" opacity=".8"/>
+  </g>
+
+  <!-- печать -->
+  <g transform="rotate(-14 330 208)">
+    <circle cx="330" cy="208" r="26" fill="#2F8156" opacity=".93"/>
+    <circle cx="330" cy="208" r="19" fill="none" stroke="#F6F3E8" stroke-width="2" opacity=".85"/>
+    <text x="330" y="204" text-anchor="middle" font-family="Arial, sans-serif" font-size="8.6" font-weight="700" fill="#F6F3E8">СИЛА</text>
+    <text x="330" y="216" text-anchor="middle" font-family="Arial, sans-serif" font-size="8.6" font-weight="700" fill="#F6F3E8">ПРАВА</text>
+  </g>
+
+  <!-- ручка -->
+  <g transform="rotate(42 76 216)">
+    <rect x="70" y="168" width="12" height="66" rx="6" fill="#2F8156"/>
+    <path d="M70 234 L76 250 L82 234 Z" fill="#13321F"/>
+    <rect x="70" y="168" width="12" height="13" rx="6" fill="#F5C542"/>
+  </g>
+</svg>

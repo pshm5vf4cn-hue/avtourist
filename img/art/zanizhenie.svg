@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Весы: заниженная выплата против реального ущерба">
+  <defs>
+    <linearGradient id="az-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F8156"/><stop offset="1" stop-color="#13321F"/>
+    </linearGradient>
+    <linearGradient id="az-metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A6B4E"/><stop offset="1" stop-color="#173B28"/>
+    </linearGradient>
+    <linearGradient id="az-coin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7D774"/><stop offset="1" stop-color="#E0A93B"/>
+    </linearGradient>
+    <linearGradient id="az-paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EFEAD6"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="300" rx="16" fill="url(#az-bg)"/>
+  <circle cx="420" cy="260" r="110" fill="#000000" opacity=".08"/>
+
+  <!-- стойка -->
+  <rect x="232" y="46" width="14" height="196" rx="7" fill="url(#az-metal)"/>
+  <rect x="196" y="238" width="86" height="16" rx="8" fill="url(#az-metal)"/>
+  <circle cx="239" cy="50" r="11" fill="#43B873"/>
+
+  <!-- балка наклонена: реальный ущерб тяжелее -->
+  <g transform="rotate(-9 239 54)">
+    <rect x="72" y="48" width="334" height="11" rx="5.5" fill="url(#az-metal)"/>
+    <!-- левая чаша ВЫШЕ: чек страховой «по калькуляции» -->
+    <line x1="96" y1="59" x2="78" y2="128" stroke="#D9D4BE" stroke-width="3"/>
+    <line x1="96" y1="59" x2="114" y2="128" stroke="#D9D4BE" stroke-width="3"/>
+    <path d="M62 128 Q96 150 130 128" fill="#43B873"/>
+    <g transform="rotate(-7 96 104)">
+      <rect x="56" y="66" width="80" height="72" rx="8" fill="url(#az-paper)"/>
+      <rect x="64" y="76" width="40" height="7" rx="3.5" fill="#C0392B"/>
+      <rect x="64" y="90" width="64" height="5" rx="2.5" fill="#D9D4BE"/>
+      <rect x="64" y="101" width="56" height="5" rx="2.5" fill="#E0DAC2"/>
+      <text x="66" y="128" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="#55604F">30 000 ₽</text>
+    </g>
+    <!-- правая чаша НИЖЕ: реальный ущерб с экспертизой -->
+    <line x1="382" y1="59" x2="364" y2="158" stroke="#D9D4BE" stroke-width="3"/>
+    <line x1="382" y1="59" x2="400" y2="158" stroke="#D9D4BE" stroke-width="3"/>
+    <path d="M348 158 Q382 180 416 158" fill="#43B873"/>
+    <ellipse cx="382" cy="148" rx="26" ry="9" fill="#B9831F"/>
+    <ellipse cx="382" cy="139" rx="26" ry="9" fill="url(#az-coin)"/>
+    <ellipse cx="382" cy="130" rx="26" ry="9" fill="#F7D774"/>
+    <text x="382" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="#5E3A1D">150 000 ₽</text>
+  </g>
+
+  <!-- подписи -->
+  <text x="96" y="216" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" fill="#F6F3E8" opacity=".85">по калькуляции</text>
+  <text x="382" y="222" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" font-weight="700" fill="#F6F3E8" opacity=".85">реальный ущерб</text>
+
+  <!-- значок экспертизы -->
+  <g transform="translate(196 96) rotate(-12)">
+    <circle cx="30" cy="30" r="26" fill="#DFF3E7" opacity=".2" stroke="#43D47D" stroke-width="5"/>
+    <line x1="48" y1="48" x2="66" y2="66" stroke="#43D47D" stroke-width="9" stroke-linecap="round"/>
+    <path d="M18 30 L28 30 L32 20 L38 40 L42 30 L46 30" fill="none" stroke="#F6F3E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

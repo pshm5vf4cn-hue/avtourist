@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-label="Ремонт автомобиля">
+  <defs>
+    <linearGradient id="rw-metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8E9A90"/><stop offset="1" stop-color="#55604F"/>
+    </linearGradient>
+    <linearGradient id="rw-green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#43B873"/><stop offset="1" stop-color="#1E5C38"/>
+    </linearGradient>
+    <linearGradient id="rw-car" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A6B4E"/><stop offset="1" stop-color="#1A4A32"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="120" cy="178" rx="92" ry="13" fill="#13321F" opacity=".10"/>
+  <!-- машина -->
+  <g>
+    <path d="M34 130 Q36 114 56 110 L70 92 Q76 84 88 84 L130 84 Q142 84 148 92 L162 110 Q180 114 182 126 L182 138 Q182 144 176 144 L42 144 Q34 144 34 138 Z" fill="url(#rw-car)"/>
+    <path d="M76 96 Q80 92 88 92 L104 92 L104 112 L62 112 Z" fill="#C9E4D5" opacity=".85"/>
+    <path d="M112 92 L130 92 Q137 92 141 97 L151 110 L112 110 Z" fill="#C9E4D5" opacity=".85"/>
+    <circle cx="68" cy="144" r="14" fill="#23282C"/>
+    <circle cx="68" cy="144" r="6.5" fill="#8E9A90"/>
+    <circle cx="150" cy="144" r="14" fill="#23282C"/>
+    <circle cx="150" cy="144" r="6.5" fill="#8E9A90"/>
+  </g>
+  <!-- гаечный ключ -->
+  <g transform="rotate(-32 150 66)">
+    <rect x="96" y="58" width="86" height="16" rx="8" fill="url(#rw-metal)"/>
+    <circle cx="186" cy="66" r="20" fill="url(#rw-metal)"/>
+    <circle cx="186" cy="66" r="11" fill="#FDFAF0"/>
+    <circle cx="90" cy="66" r="13" fill="url(#rw-metal)"/>
+    <circle cx="90" cy="66" r="6" fill="#FDFAF0"/>
+    <rect x="96" y="60" width="80" height="4" rx="2" fill="#FFFFFF" opacity=".35"/>
+  </g>
+  <!-- шестерёнка -->
+  <g transform="rotate(18 66 56)">
+    <g fill="url(#rw-green)">
+      <rect x="60" y="26" width="12" height="14" rx="3"/>
+      <rect x="60" y="72" width="12" height="14" rx="3"/>
+      <rect x="36" y="50" width="14" height="12" rx="3"/>
+      <rect x="82" y="50" width="14" height="12" rx="3"/>
+      <rect x="45" y="33" width="12" height="12" rx="3" transform="rotate(45 51 39)"/>
+      <rect x="75" y="33" width="12" height="12" rx="3" transform="rotate(45 81 39)"/>
+      <rect x="45" y="67" width="12" height="12" rx="3" transform="rotate(45 51 73)"/>
+      <rect x="75" y="67" width="12" height="12" rx="3" transform="rotate(45 81 73)"/>
+      <circle cx="66" cy="56" r="24"/>
+    </g>
+    <circle cx="66" cy="56" r="10" fill="#FDFAF0"/>
+    <circle cx="66" cy="56" r="5" fill="url(#rw-green)"/>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Выбор по КАСКО: деньги или ремонт">
+  <defs>
+    <linearGradient id="ak-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F8156"/><stop offset="1" stop-color="#13321F"/>
+    </linearGradient>
+    <linearGradient id="ak-coin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7D774"/><stop offset="1" stop-color="#E0A93B"/>
+    </linearGradient>
+    <linearGradient id="ak-green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#43B873"/><stop offset="1" stop-color="#1E5C38"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="300" rx="16" fill="url(#ak-bg)"/>
+  <circle cx="240" cy="330" r="140" fill="#000000" opacity=".1"/>
+
+  <!-- знак вопроса в центре -->
+  <circle cx="240" cy="150" r="34" fill="#F6F3E8"/>
+  <text x="240" y="166" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="800" fill="#1E5C38">?</text>
+
+  <!-- левая ветка: деньги -->
+  <g transform="translate(56 66)">
+    <rect x="-14" y="-14" width="140" height="130" rx="16" fill="#DFF3E7" opacity=".12"/>
+    <ellipse cx="56" cy="92" rx="38" ry="12" fill="#B9831F"/>
+    <rect x="18" y="58" width="76" height="34" rx="14" fill="url(#ak-coin)"/>
+    <ellipse cx="56" cy="58" rx="38" ry="12" fill="#F7D774"/>
+    <ellipse cx="56" cy="58" rx="24" ry="7" fill="none" stroke="#B9831F" stroke-width="2" opacity=".55"/>
+    <text x="56" y="64" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="800" fill="#5E3A1D">₽</text>
+    <text x="56" y="126" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#F6F3E8">Деньгами</text>
+    <path d="M112 66 Q150 84 128 118" fill="none" stroke="#43D47D" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- правая ветка: ремонт -->
+  <g transform="translate(300 66)">
+    <rect x="-14" y="-14" width="140" height="130" rx="16" fill="#DFF3E7" opacity=".12"/>
+    <g transform="rotate(-30 56 62)">
+      <rect x="14" y="54" width="76" height="15" rx="7.5" fill="#8E9A90"/>
+      <circle cx="94" cy="61" r="21" fill="#8E9A90"/>
+      <circle cx="94" cy="61" r="11" fill="#FDFAF0"/>
+      <circle cx="14" cy="61" r="13" fill="#8E9A90"/>
+      <circle cx="14" cy="61" r="6" fill="#FDFAF0"/>
+      <rect x="14" y="56" width="72" height="4" rx="2" fill="#FFFFFF" opacity=".4"/>
+    </g>
+    <text x="56" y="126" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#F6F3E8">Ремонтом</text>
+    <path d="M0 66 Q-38 84 -16 118" fill="none" stroke="#43D47D" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- документ-выбор с брендом -->
+  <g transform="translate(168 216) rotate(-2)">
+    <rect x="0" y="0" width="146" height="56" rx="10" fill="#F6F3E8"/>
+    <path d="M14 12 L26 15 L26 27 Q26 35 20 38 Q14 35 14 27 Z" fill="#2F8156"/>
+    <text x="36" y="26" font-family="Arial, sans-serif" font-size="12" font-weight="800" fill="#1E5C38">СИЛА ПРАВА</text>
+    <rect x="36" y="34" width="88" height="5" rx="2.5" fill="#D9D4BE"/>
+    <rect x="36" y="43" width="64" height="5" rx="2.5" fill="#E6E0C8"/>
+  </g>
+</svg>

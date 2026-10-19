@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-label="Сроки обращения">
+  <defs>
+    <linearGradient id="cl-face" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EFEAD6"/>
+    </linearGradient>
+    <linearGradient id="cl-body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#43B873"/><stop offset="1" stop-color="#1E5C38"/>
+    </linearGradient>
+    <linearGradient id="cl-dial" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F8156"/><stop offset="1" stop-color="#13321F"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="120" cy="178" rx="90" ry="13" fill="#13321F" opacity=".10"/>
+  <!-- календарь -->
+  <g transform="rotate(4 158 112)">
+    <rect x="106" y="66" width="104" height="100" rx="12" fill="url(#cl-body)"/>
+    <rect x="106" y="66" width="104" height="26" rx="12" fill="#13321F" opacity=".3"/>
+    <rect x="112" y="96" width="92" height="64" rx="8" fill="url(#cl-face)"/>
+    <rect x="128" y="56" width="8" height="18" rx="4" fill="#55604F"/>
+    <rect x="180" y="56" width="8" height="18" rx="4" fill="#55604F"/>
+    <g fill="#D9D4BE">
+      <circle cx="126" cy="110" r="4.5"/><circle cx="144" cy="110" r="4.5"/><circle cx="162" cy="110" r="4.5"/><circle cx="180" cy="110" r="4.5"/>
+      <circle cx="126" cy="127" r="4.5"/><circle cx="180" cy="127" r="4.5"/>
+      <circle cx="126" cy="144" r="4.5"/><circle cx="144" cy="144" r="4.5"/><circle cx="180" cy="144" r="4.5"/>
+    </g>
+    <circle cx="162" cy="127" r="10" fill="#F5C542"/>
+    <path d="M157 127 L161 131 L168 122" fill="none" stroke="#5E3A1D" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- часы -->
+  <g>
+    <circle cx="76" cy="106" r="52" fill="url(#cl-dial)"/>
+    <circle cx="76" cy="106" r="43" fill="#FDFAF0"/>
+    <g stroke="#55604F" stroke-width="3" stroke-linecap="round">
+      <line x1="76" y1="68" x2="76" y2="76"/>
+      <line x1="76" y1="136" x2="76" y2="144"/>
+      <line x1="38" y1="106" x2="46" y2="106"/>
+      <line x1="106" y1="106" x2="114" y2="106"/>
+    </g>
+    <line x1="76" y1="106" x2="76" y2="80" stroke="#1E5C38" stroke-width="5" stroke-linecap="round"/>
+    <line x1="76" y1="106" x2="96" y2="118" stroke="#2F8156" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="76" cy="106" r="5" fill="#F5C542" stroke="#5E3A1D" stroke-width="1.6"/>
+  </g>
+</svg>

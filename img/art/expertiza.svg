@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Независимый эксперт осматривает повреждения автомобиля">
+  <defs>
+    <linearGradient id="ke-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F8156"/><stop offset="1" stop-color="#13321F"/>
+    </linearGradient>
+    <linearGradient id="ke-car" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A6B4E"/><stop offset="1" stop-color="#1A4A32"/>
+    </linearGradient>
+    <linearGradient id="ke-glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E8F6EE" stop-opacity=".92"/><stop offset="1" stop-color="#B7DCC6" stop-opacity=".8"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="300" rx="16" fill="url(#ke-bg)"/>
+  <circle cx="70" cy="250" r="100" fill="#000000" opacity=".08"/>
+
+  <!-- машина -->
+  <g transform="translate(180 120)">
+    <path d="M24 88 Q26 68 50 62 L66 38 Q73 28 87 28 L131 28 Q145 28 152 38 L168 60 Q188 66 190 80 L190 92 Q190 100 182 100 L32 100 Q24 100 24 92 Z" fill="url(#ke-car)"/>
+    <path d="M76 42 Q81 36 89 36 L106 36 L106 60 L62 60 Z" fill="#C9E4D5" opacity=".85"/>
+    <path d="M116 36 L131 36 Q138 36 143 42 L153 58 L116 58 Z" fill="#C9E4D5" opacity=".85"/>
+    <path d="M138 72 L156 66 L148 78 L168 76" fill="none" stroke="#13321F" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+    <circle cx="60" cy="100" r="17" fill="#23282C"/><circle cx="60" cy="100" r="7.5" fill="#8E9A90"/>
+    <circle cx="156" cy="100" r="17" fill="#23282C"/><circle cx="156" cy="100" r="7.5" fill="#8E9A90"/>
+  </g>
+
+  <!-- эксперт с лупой -->
+  <g transform="translate(56 84)">
+    <rect x="0" y="86" width="58" height="94" rx="18" fill="#E8E4D2"/>
+    <rect x="0" y="86" width="58" height="14" rx="7" fill="#CFC9A9"/>
+    <circle cx="29" cy="54" r="25" fill="#F2C9A2"/>
+    <path d="M4 50 Q3 26 29 25 Q55 26 54 50 Q49 36 39 34 Q33 33 29 34 Q25 33 19 34 Q9 36 4 50 Z" fill="#8E939C"/>
+    <circle cx="20" cy="56" r="2.8" fill="#23282C"/><circle cx="38" cy="56" r="2.8" fill="#23282C"/>
+    <path d="M21 66 Q29 70 37 66" fill="none" stroke="#B4703F" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M54 108 Q84 112 96 92" fill="none" stroke="#E8E4D2" stroke-width="13" stroke-linecap="round"/>
+  </g>
+  <!-- лупа в руке эксперта, направленная на повреждение -->
+  <g transform="translate(140 130) rotate(-20)">
+    <circle cx="30" cy="30" r="27" fill="url(#ke-glass)" stroke="#173B28" stroke-width="8"/>
+    <path d="M12 16 Q20 8 34 7" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+    <rect x="48" y="48" width="13" height="44" rx="6.5" fill="#173B28" transform="rotate(-45 54 70)"/>
+    <path d="M22 32 L32 32 L36 24 L42 42 L47 32 L52 32" fill="none" stroke="#1E5C38" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" transform="translate(-4 -6)"/>
+  </g>
+
+  <!-- планшет с отчётом СИЛА ПРАВА -->
+  <g transform="translate(326 210) rotate(3)">
+    <rect x="0" y="0" width="128" height="62" rx="10" fill="#F6F3E8"/>
+    <path d="M10 10 L22 13 L22 26 Q22 34 16 37 Q10 34 10 26 Z" fill="#2F8156"/>
+    <text x="32" y="24" font-family="Arial, sans-serif" font-size="11" font-weight="800" fill="#1E5C38">СИЛА ПРАВА</text>
+    <text x="32" y="40" font-family="Arial, sans-serif" font-size="9.5" font-weight="700" fill="#55604F">отчёт эксперта</text>
+    <circle cx="108" cy="30" r="13" fill="#2F8156"/>
+    <path d="M102 30 L106 34 L114 25" fill="none" stroke="#F6F3E8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

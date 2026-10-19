@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="КАСКО: автомобиль под защитой зонта">
+  <defs>
+    <linearGradient id="kk-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F8156"/><stop offset="1" stop-color="#13321F"/>
+    </linearGradient>
+    <linearGradient id="kk-car" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#43B873"/><stop offset="1" stop-color="#1E5C38"/>
+    </linearGradient>
+    <linearGradient id="kk-umb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#43B873"/><stop offset="1" stop-color="#1E5C38"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="300" rx="16" fill="url(#kk-bg)"/>
+  <circle cx="410" cy="250" r="110" fill="#000000" opacity=".08"/>
+
+  <!-- зонт -->
+  <g transform="translate(240 30)">
+    <path d="M-150 62 Q-110 -18 0 -18 Q110 -18 150 62 Q112 36 75 62 Q38 36 0 62 Q-38 36 -75 62 Q-112 36 -150 62 Z" fill="url(#kk-umb)"/>
+    <path d="M-150 62 Q-110 -18 0 -18 Q110 -18 150 62" fill="none" stroke="#F5C542" stroke-width="4" opacity=".7"/>
+    <path d="M0 -18 L0 130 Q0 152 -22 152 Q-40 152 -40 136" fill="none" stroke="#F6F3E8" stroke-width="7" stroke-linecap="round"/>
+    <text x="0" y="34" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="800" letter-spacing="2" fill="#F6F3E8">КАСКО</text>
+  </g>
+
+  <!-- машина под зонтом -->
+  <g transform="translate(140 168)">
+    <path d="M20 74 Q22 56 44 50 L60 28 Q67 18 81 18 L125 18 Q139 18 146 28 L162 50 Q182 56 184 70 L184 80 Q184 88 176 88 L28 88 Q20 88 20 80 Z" fill="url(#kk-car)"/>
+    <path d="M70 32 Q75 26 83 26 L100 26 L100 48 L56 48 Z" fill="#DFF3E7"/>
+    <path d="M110 26 L125 26 Q132 26 137 32 L147 48 L110 48 Z" fill="#DFF3E7"/>
+    <circle cx="54" cy="88" r="16" fill="#23282C"/><circle cx="54" cy="88" r="7" fill="#8E9A90"/>
+    <circle cx="150" cy="88" r="16" fill="#23282C"/><circle cx="150" cy="88" r="7" fill="#8E9A90"/>
+  </g>
+
+  <!-- капли дождя за пределами зонта -->
+  <g stroke="#DFF3E7" stroke-width="4" stroke-linecap="round" opacity=".7">
+    <line x1="60" y1="120" x2="52" y2="136"/>
+    <line x1="36" y1="176" x2="28" y2="192"/>
+    <line x1="424" y1="120" x2="416" y2="136"/>
+    <line x1="448" y1="176" x2="440" y2="192"/>
+  </g>
+</svg>

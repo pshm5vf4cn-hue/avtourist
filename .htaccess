@@ -1,0 +1,25 @@
+# === dtpzakon.ru — базовая конфигурация статического сайта ===
+Options -Indexes
+DirectoryIndex index.html
+
+# Принудительный HTTPS + склейка на канонический домен (без www).
+# Учитываем и прямое соединение (%{HTTPS}), и проксированное (X-Forwarded-Proto),
+# как обычно бывает на шаред-хостинге за балансировщиком.
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://dtpzakon.ru%{REQUEST_URI} [R=301,L]
+
+# Кастомная 404
+ErrorDocument 404 /404.html
+
+# Базовый кеш статики
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+</IfModule>

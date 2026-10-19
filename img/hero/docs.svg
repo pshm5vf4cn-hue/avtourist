@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200">
+  <ellipse cx="120" cy="178" rx="88" ry="11" fill="#14261C" opacity="0.08"/>
+  <!-- задний лист -->
+  <g transform="rotate(6 88 108)">
+    <rect x="42" y="44" width="96" height="120" rx="10" fill="#43B873"/>
+    <rect x="56" y="64" width="68" height="7" rx="3.5" fill="#14261C" opacity="0.3"/>
+    <rect x="56" y="82" width="68" height="7" rx="3.5" fill="#14261C" opacity="0.3"/>
+    <rect x="56" y="100" width="44" height="7" rx="3.5" fill="#14261C" opacity="0.3"/>
+  </g>
+  <!-- передний лист -->
+  <g transform="rotate(-4 140 110)">
+    <rect x="92" y="36" width="100" height="124" rx="10" fill="#FFFFFF" stroke="#2F8156" stroke-width="4"/>
+    <rect x="108" y="56" width="68" height="7" rx="3.5" fill="#2F8156" opacity="0.55"/>
+    <rect x="108" y="74" width="68" height="7" rx="3.5" fill="#2F8156" opacity="0.55"/>
+    <rect x="108" y="92" width="46" height="7" rx="3.5" fill="#2F8156" opacity="0.55"/>
+    <path d="M108 128 C116 112 124 142 134 124 C140 114 146 126 154 118" fill="none" stroke="#14261C" stroke-width="4" stroke-linecap="round"/>
+    <!-- печать -->
+    <circle cx="172" cy="132" r="20" fill="#F5C518"/>
+    <circle cx="172" cy="132" r="13" fill="none" stroke="#D9A80B" stroke-width="3"/>
+    <path d="M166 132 l4 5 8 -10" fill="none" stroke="#14261C" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- ручка -->
+  <g transform="rotate(30 60 150)">
+    <rect x="46" y="96" width="12" height="64" rx="6" fill="#2F8156"/>
+    <path d="M46 104 h12 v-8 h-12 Z" fill="#F5C518"/>
+    <path d="M52 160 L46 176 L58 176 Z" fill="#14261C"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200">
+  <ellipse cx="120" cy="178" rx="88" ry="11" fill="#14261C" opacity="0.08"/>
+  <!-- юрист: плечо в костюме + голова -->
+  <g>
+    <path d="M52 170 C52 128 84 108 120 108 C156 108 188 128 188 170 Z" fill="#2F8156"/>
+    <path d="M96 112 L120 170 L144 112 C136 107 128 105 120 105 C112 105 104 107 96 112 Z" fill="#FFFFFF"/>
+    <path d="M112 112 L120 128 L128 112 L120 108 Z" fill="#F5C518"/>
+    <circle cx="120" cy="72" r="34" fill="#43B873"/>
+    <circle cx="120" cy="72" r="26" fill="#FFFFFF" opacity="0.25"/>
+  </g>
+  <!-- гарнитура -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M84 66 a36 36 0 0 1 72 0" stroke="#14261C" stroke-width="9"/>
+    <rect x="74" y="62" width="16" height="28" rx="8" fill="#14261C" stroke="none"/>
+    <rect x="150" y="62" width="16" height="28" rx="8" fill="#14261C" stroke="none"/>
+    <path d="M158 90 C158 112 142 122 124 124" stroke="#14261C" stroke-width="7"/>
+  </g>
+  <circle cx="120" cy="126" r="7" fill="#F5C518"/>
+  <!-- сердце с крестом -->
+  <g transform="translate(176 118)">
+    <path d="M24 44 C10 32 0 22 0 12 C0 4 6 0 12 0 C17 0 21 3 24 8 C27 3 31 0 36 0 C42 0 48 4 48 12 C48 22 38 32 24 44 Z" fill="#F5C518"/>
+    <path d="M24 10 v16 M16 18 h16" stroke="#2F8156" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

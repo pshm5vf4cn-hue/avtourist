@@ -1,0 +1,64 @@
+/* Яркая рекламная карточка заявки */
+.hero-card#lead-form, .cta-banner {
+  background: linear-gradient(120deg, #173B28 0%, #1E5C38 45%, #2F8156 100%) !important;
+  border-radius: 22px;
+  box-shadow: 0 18px 48px rgba(23,59,40,.35), inset 0 1px 0 rgba(255,255,255,.15);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.hero-card#lead-form::before, .cta-banner::before {
+  content: "";
+  position: absolute; top: -60%; right: -15%;
+  width: 320px; height: 320px;
+  background: radial-gradient(circle, rgba(67,184,115,.5), transparent 65%);
+  pointer-events: none;
+}
+.hero-card#lead-form h2, .cta-banner h2 { color: #fff !important; }
+.hero-card#lead-form p, .cta-banner p { color: rgba(255,255,255,.85) !important; }
+.hero-card#lead-form label { color: rgba(255,255,255,.9); }
+.hero-card#lead-form input, .hero-card#lead-form select {
+  background: rgba(255,255,255,.95);
+  border-color: transparent;
+}
+.hero-card#lead-form .btn-primary, .cta-banner .btn-primary {
+  background: linear-gradient(93deg, #F5C518, #E8A90B) !important;
+  color: #1c2b23 !important;
+  font-weight: 800;
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+.hero-card#lead-form .form-note, .hero-card#lead-form .form-note a { color: rgba(255,255,255,.6); }
+
+/* CTA-баннер «Оставьте заявку» */
+.cta-banner {
+  padding: 28px 32px;
+  margin: 28px 0;
+}
+.cta-banner .cta-perks {
+  color: rgba(255,255,255,.75) !important;
+  font-size: .85rem;
+  margin-top: 16px;
+}
+
+/* Полоса .cta-section — во всю ширину: убираем карточные отступы, сохраняем вертикальные */
+.cta-section.cta-banner { padding: 40px 0; margin: 0; border-radius: 0; }
+.cta-section.cta-banner .cta-perks { margin-bottom: 24px; }
+.cta-section.cta-banner > .container { border-radius: 22px; }
+
+/* Блок «Офисы и реквизиты» на странице контактов */
+.offices { margin-top: 28px; }
+.offices-lead { color: var(--muted); max-width: 640px; }
+.offices-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 20px 0 24px; }
+.office-card {
+  background: var(--surface, #fff);
+  border: 1px solid var(--border, rgba(19,50,31,.12));
+  border-radius: 16px;
+  padding: 20px 22px;
+  box-shadow: var(--shadow, none);
+}
+.office-card h3 { margin: 0 0 8px; font-size: 1.1rem; }
+.office-addr { margin: 0; font-size: .95rem; }
+.office-metro { margin: 6px 0 0; font-size: .85rem; color: var(--muted); }
+.offices-meta { list-style: none; padding: 0; margin: 0; font-size: .92rem; }
+.offices-meta li { padding: 8px 0; border-top: 1px solid var(--border, rgba(19,50,31,.12)); }
+.offices-meta a { color: var(--accent, #2E6B44); }

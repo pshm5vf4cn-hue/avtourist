@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200">
+  <ellipse cx="120" cy="178" rx="90" ry="11" fill="#14261C" opacity="0.08"/>
+  <!-- весы правосудия -->
+  <g stroke-linecap="round">
+    <rect x="116" y="34" width="8" height="108" rx="4" fill="#2F8156"/>
+    <rect x="76" y="42" width="88" height="8" rx="4" fill="#2F8156"/>
+    <circle cx="120" cy="38" r="8" fill="#F5C518"/>
+    <path d="M84 52 L64 92 M84 52 L104 92" stroke="#1E5C38" stroke-width="4" fill="none"/>
+    <path d="M52 92 Q84 128 116 92 Z" fill="#43B873"/>
+    <path d="M124 52 L104 92 M124 52 L144 92" stroke="#1E5C38" stroke-width="4" fill="none"/>
+    <path d="M92 92 Q124 128 156 92 Z" fill="#F5C518"/>
+    <rect x="96" y="142" width="48" height="10" rx="5" fill="#2F8156"/>
+    <rect x="86" y="152" width="68" height="10" rx="5" fill="#1E5C38"/>
+  </g>
+  <!-- молоток -->
+  <g transform="rotate(-24 176 118)">
+    <rect x="168" y="66" width="16" height="92" rx="8" fill="#8A5A2B"/>
+    <rect x="146" y="44" width="60" height="34" rx="10" fill="#2F8156"/>
+    <rect x="146" y="52" width="60" height="8" fill="#43B873"/>
+  </g>
+  <!-- звёздочка блеска -->
+  <path d="M196 34 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 Z" fill="#F5C518"/>
+</svg>

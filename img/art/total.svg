@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Тотальная гибель автомобиля по КАСКО: бирка тотал и оценка">
+  <defs>
+    <linearGradient id="at-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F8156"/><stop offset="1" stop-color="#13321F"/>
+    </linearGradient>
+    <linearGradient id="at-car" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5B7A67"/><stop offset="1" stop-color="#2E4A3A"/>
+    </linearGradient>
+    <linearGradient id="at-tag" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7D774"/><stop offset="1" stop-color="#E0A93B"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="300" rx="16" fill="url(#at-bg)"/>
+  <circle cx="70" cy="60" r="90" fill="#FFFFFF" opacity=".05"/>
+
+  <!-- оградительная лента -->
+  <g transform="rotate(-6 240 66)">
+    <rect x="40" y="52" width="400" height="22" rx="6" fill="#F5C542"/>
+    <g fill="#13321F" opacity=".85">
+      <path d="M56 52 L74 52 L60 74 L42 74 Z"/><path d="M96 52 L114 52 L100 74 L82 74 Z"/>
+      <path d="M136 52 L154 52 L140 74 L122 74 Z"/><path d="M176 52 L194 52 L180 74 L162 74 Z"/>
+      <path d="M216 52 L234 52 L220 74 L202 74 Z"/><path d="M256 52 L274 52 L260 74 L242 74 Z"/>
+      <path d="M296 52 L314 52 L300 74 L282 74 Z"/><path d="M336 52 L354 52 L340 74 L322 74 Z"/>
+      <path d="M376 52 L394 52 L380 74 L362 74 Z"/><path d="M416 52 L434 52 L420 74 L402 74 Z"/>
+    </g>
+  </g>
+
+  <!-- повреждённая машина -->
+  <g transform="translate(70 128)">
+    <path d="M30 92 Q33 70 60 64 L78 40 Q86 29 102 29 L158 29 Q174 29 182 40 L198 62 Q222 68 224 84 L224 98 Q224 106 216 106 L40 106 Q30 106 30 98 Z" fill="url(#at-car)"/>
+    <path d="M90 44 Q96 38 105 38 L124 38 L124 64 L72 64 Z" fill="#B9CFC2" opacity=".8"/>
+    <path d="M134 38 L156 38 Q164 38 169 45 L180 61 L134 61 Z" fill="#B9CFC2" opacity=".8"/>
+    <!-- вмятина и трещина -->
+    <path d="M60 84 L78 78 L72 90 L92 86" fill="none" stroke="#13321F" stroke-width="3.4" stroke-linecap="round" opacity=".8"/>
+    <path d="M170 70 L184 76 L176 84 L194 88" fill="none" stroke="#13321F" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+    <circle cx="76" cy="106" r="19" fill="#23282C"/><circle cx="76" cy="106" r="8.5" fill="#6E7A70"/>
+    <circle cx="180" cy="106" r="19" fill="#23282C"/><circle cx="180" cy="106" r="8.5" fill="#6E7A70"/>
+  </g>
+
+  <!-- бирка ТОТАЛ -->
+  <g transform="rotate(9 356 120)">
+    <path d="M356 84 L356 102" stroke="#8A5A33" stroke-width="5" stroke-linecap="round"/>
+    <rect x="306" y="102" width="100" height="52" rx="12" fill="url(#at-tag)"/>
+    <circle cx="356" cy="105" r="6" fill="#FDFAF0"/>
+    <text x="356" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="800" letter-spacing="1.5" fill="#5E3A1D">ТОТАЛ</text>
+  </g>
+
+  <!-- процент износа -->
+  <g transform="translate(330 196)">
+    <circle cx="44" cy="44" r="38" fill="#DFF3E7" opacity=".15"/>
+    <circle cx="44" cy="44" r="38" fill="none" stroke="#2F8156" stroke-width="9"/>
+    <path d="M44 6 A38 38 0 0 1 78 52" fill="none" stroke="#F5C542" stroke-width="9" stroke-linecap="round"/>
+    <text x="44" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#F6F3E8">износ</text>
+  </g>
+</svg>

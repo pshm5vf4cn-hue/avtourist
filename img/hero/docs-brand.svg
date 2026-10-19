@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-label="Документы СИЛА ПРАВА">
+  <defs>
+    <linearGradient id="db-paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EFEAD6"/>
+    </linearGradient>
+    <linearGradient id="db-paper2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F9F6EA"/><stop offset="1" stop-color="#E6E0C8"/>
+    </linearGradient>
+    <linearGradient id="db-stamp" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#43B873"/><stop offset="1" stop-color="#1E5C38"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="120" cy="178" rx="86" ry="13" fill="#13321F" opacity=".10"/>
+  <!-- нижний лист -->
+  <g transform="rotate(7 150 120)">
+    <rect x="102" y="52" width="106" height="118" rx="9" fill="url(#db-paper2)" stroke="#D9D4BE" stroke-width="1.5"/>
+    <rect x="114" y="68" width="70" height="6" rx="3" fill="#D5CFB4"/>
+    <rect x="114" y="82" width="82" height="5" rx="2.5" fill="#E3DDC4"/>
+    <rect x="114" y="94" width="76" height="5" rx="2.5" fill="#E3DDC4"/>
+    <rect x="114" y="106" width="60" height="5" rx="2.5" fill="#E3DDC4"/>
+  </g>
+  <!-- верхний лист с брендом -->
+  <g transform="rotate(-5 100 115)">
+    <rect x="36" y="46" width="112" height="122" rx="9" fill="url(#db-paper)" stroke="#D9D4BE" stroke-width="1.5"/>
+    <rect x="44" y="54" width="96" height="106" rx="6" fill="none" stroke="#C9C3A8" stroke-width="1.2" opacity=".7"/>
+    <!-- мини-логотип: щит -->
+    <path d="M60 66 L74 70 L74 84 Q74 94 67 98 Q60 94 60 84 Z" fill="url(#db-stamp)"/>
+    <path d="M64 74 L72 74 M64 80 L70 80" stroke="#F6F3E8" stroke-width="2" stroke-linecap="round"/>
+    <text x="82" y="82" font-family="Arial, sans-serif" font-size="12.5" font-weight="800" letter-spacing="1" fill="#1E5C38">СИЛА</text>
+    <text x="82" y="95" font-family="Arial, sans-serif" font-size="12.5" font-weight="800" letter-spacing="1" fill="#2F8156">ПРАВА</text>
+    <!-- строки текста -->
+    <rect x="60" y="106" width="72" height="5" rx="2.5" fill="#C9C3A8"/>
+    <rect x="60" y="117" width="80" height="5" rx="2.5" fill="#E0DAC2"/>
+    <rect x="60" y="128" width="66" height="5" rx="2.5" fill="#E0DAC2"/>
+    <rect x="60" y="139" width="74" height="5" rx="2.5" fill="#E0DAC2"/>
+    <!-- подпись -->
+    <path d="M60 152 Q70 146 80 151 T102 150" fill="none" stroke="#55604F" stroke-width="1.6" stroke-linecap="round" opacity=".7"/>
+  </g>
+  <!-- печать -->
+  <g transform="rotate(-12 158 148)">
+    <circle cx="158" cy="148" r="21" fill="url(#db-stamp)" opacity=".92"/>
+    <circle cx="158" cy="148" r="15.5" fill="none" stroke="#F6F3E8" stroke-width="1.6" opacity=".85"/>
+    <text x="158" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#F6F3E8">СИЛА</text>
+    <text x="158" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#F6F3E8">ПРАВА</text>
+  </g>
+  <!-- ручка -->
+  <g transform="rotate(38 196 88)">
+    <rect x="190" y="62" width="9" height="52" rx="4.5" fill="#2F8156"/>
+    <path d="M190 114 L194.5 126 L199 114 Z" fill="#173B28"/>
+    <rect x="190" y="62" width="9" height="10" rx="4.5" fill="#F5C542"/>
+  </g>
+</svg>

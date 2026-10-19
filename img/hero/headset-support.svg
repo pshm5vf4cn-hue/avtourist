@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-label="Юрист на связи">
+  <defs>
+    <linearGradient id="hs-green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#43B873"/><stop offset="1" stop-color="#1E5C38"/>
+    </linearGradient>
+    <linearGradient id="hs-dark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2F8156"/><stop offset="1" stop-color="#173B28"/>
+    </linearGradient>
+    <linearGradient id="hs-bubble" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EFEAD6"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="120" cy="178" rx="86" ry="13" fill="#13321F" opacity=".10"/>
+  <!-- круглая подложка с юристом -->
+  <circle cx="92" cy="104" r="62" fill="url(#hs-dark)"/>
+  <circle cx="70" cy="78" r="30" fill="#FFFFFF" opacity=".06"/>
+  <!-- голова -->
+  <ellipse cx="92" cy="96" rx="24" ry="25.5" fill="#F2C9A2"/>
+  <path d="M68 92 Q66 70 92 69 Q118 70 116 92 Q112 79 102 78 Q97 77.5 92 78 Q87 77.5 82 78 Q72 79 68 92 Z" fill="#3A2C22"/>
+  <!-- глаза и улыбка -->
+  <circle cx="83" cy="98" r="3.4" fill="#23282C"/>
+  <circle cx="101" cy="98" r="3.4" fill="#23282C"/>
+  <circle cx="84.2" cy="96.9" r="1" fill="#FFFFFF"/>
+  <circle cx="102.2" cy="96.9" r="1" fill="#FFFFFF"/>
+  <path d="M84 108 Q92 113 100 108" fill="none" stroke="#B4703F" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- гарнитура -->
+  <path d="M65 100 Q63 66 92 64 Q121 66 119 100" fill="none" stroke="#23282C" stroke-width="6" stroke-linecap="round"/>
+  <rect x="58" y="92" width="12" height="20" rx="5.4" fill="#23282C"/>
+  <rect x="114" y="92" width="12" height="20" rx="5.4" fill="#23282C"/>
+  <rect x="60.4" y="96" width="7.2" height="12" rx="3.4" fill="#43D47D" opacity=".85"/>
+  <path d="M61 110 Q56 120 70 123" fill="none" stroke="#23282C" stroke-width="3.6" stroke-linecap="round"/>
+  <circle cx="71.5" cy="123.5" r="4.2" fill="#23282C"/>
+  <circle cx="71.5" cy="123.5" r="1.7" fill="#43D47D"/>
+  <!-- плечи -->
+  <path d="M52 166 Q54 136 92 134 Q130 136 132 166 Z" fill="url(#hs-green)"/>
+  <path d="M84 138 L92 150 L100 138 Q96 141 92 141 Q88 141 84 138 Z" fill="#F6F3E8"/>
+  <!-- чат-пузыри -->
+  <g>
+    <rect x="138" y="52" width="78" height="46" rx="13" fill="url(#hs-bubble)" stroke="#D9D4BE" stroke-width="1.5"/>
+    <path d="M148 98 L144 110 L158 98 Z" fill="url(#hs-bubble)" stroke="#D9D4BE" stroke-width="1.5"/>
+    <circle cx="154" cy="75" r="4.5" fill="#2F8156"/>
+    <circle cx="170" cy="75" r="4.5" fill="#2F8156" opacity=".65"/>
+    <circle cx="186" cy="75" r="4.5" fill="#2F8156" opacity=".35"/>
+  </g>
+  <g>
+    <rect x="150" y="112" width="62" height="40" rx="12" fill="url(#hs-green)"/>
+    <path d="M196 152 L202 162 L188 152 Z" fill="#1E5C38"/>
+    <path d="M172 122 L177 132 L187 132 L179 139 L182 149 L172 143 L162 149 L165 139 L157 132 L167 132 Z" fill="#F6F3E8"/>
+  </g>
+</svg>

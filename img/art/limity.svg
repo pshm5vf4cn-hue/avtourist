@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Полис ОСАГО и шкала лимитов выплаты">
+  <defs>
+    <linearGradient id="al-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F8156"/><stop offset="1" stop-color="#13321F"/>
+    </linearGradient>
+    <linearGradient id="al-paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EFEAD6"/>
+    </linearGradient>
+    <linearGradient id="al-car" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#43B873"/><stop offset="1" stop-color="#1E5C38"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="300" rx="16" fill="url(#al-bg)"/>
+  <circle cx="410" cy="50" r="100" fill="#FFFFFF" opacity=".05"/>
+
+  <!-- машина -->
+  <g transform="translate(268 168)">
+    <path d="M16 70 Q18 54 40 48 L58 26 Q65 17 78 17 L126 17 Q139 17 146 26 L162 48 Q182 54 184 66 L184 78 Q184 86 176 86 L26 86 Q16 86 16 78 Z" fill="url(#al-car)"/>
+    <path d="M66 30 Q71 25 79 25 L98 25 L98 50 L52 50 Z" fill="#DFF3E7"/>
+    <path d="M108 25 L126 25 Q133 25 138 31 L148 48 L108 48 Z" fill="#DFF3E7"/>
+    <circle cx="52" cy="86" r="16" fill="#23282C"/><circle cx="52" cy="86" r="7" fill="#8E9A90"/>
+    <circle cx="148" cy="86" r="16" fill="#23282C"/><circle cx="148" cy="86" r="7" fill="#8E9A90"/>
+    <rect x="178" y="58" width="10" height="7" rx="3.5" fill="#F5C542"/>
+  </g>
+
+  <!-- полис ОСАГО -->
+  <g transform="rotate(-4 150 140)">
+    <rect x="52" y="44" width="200" height="152" rx="14" fill="url(#al-paper)"/>
+    <rect x="62" y="54" width="180" height="132" rx="9" fill="none" stroke="#C9C3A8" stroke-width="1.6" opacity=".7"/>
+    <rect x="74" y="66" width="92" height="20" rx="10" fill="#2F8156"/>
+    <text x="120" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="800" letter-spacing="2" fill="#F6F3E8">ОСАГО</text>
+    <rect x="74" y="98" width="120" height="6" rx="3" fill="#C9C3A8"/>
+    <rect x="74" y="111" width="150" height="6" rx="3" fill="#E0DAC2"/>
+    <rect x="74" y="124" width="134" height="6" rx="3" fill="#E0DAC2"/>
+    <!-- шкала лимита -->
+    <rect x="74" y="146" width="156" height="16" rx="8" fill="#EEF5F0" stroke="#2F8156" stroke-width="1.5"/>
+    <rect x="76" y="148" width="96" height="12" rx="6" fill="#43B873"/>
+    <circle cx="172" cy="154" r="10" fill="#F5C542" stroke="#5E3A1D" stroke-width="1.6"/>
+    <text x="120" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="800" fill="#1E5C38">лимит 400 000 ₽</text>
+  </g>
+
+  <!-- бейдж сверху лимита -->
+  <g transform="rotate(6 340 70)">
+    <rect x="274" y="44" width="134" height="52" rx="13" fill="#F5C542"/>
+    <text x="341" y="66" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#5E3A1D">ущерб больше</text>
+    <text x="341" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#5E3A1D">лимита?</text>
+  </g>
+  <path d="M330 100 Q318 130 308 158" fill="none" stroke="#F5C542" stroke-width="6" stroke-linecap="round" stroke-dasharray="1 12"/>
+</svg>

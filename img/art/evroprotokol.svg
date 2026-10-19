@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Два водителя оформляют европротокол после ДТП">
+  <defs>
+    <linearGradient id="ae-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F8156"/><stop offset="1" stop-color="#13321F"/>
+    </linearGradient>
+    <linearGradient id="ae-car1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#43B873"/><stop offset="1" stop-color="#1E5C38"/>
+    </linearGradient>
+    <linearGradient id="ae-car2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5B7A67"/><stop offset="1" stop-color="#2E4A3A"/>
+    </linearGradient>
+    <linearGradient id="ae-paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EFEAD6"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="300" rx="16" fill="url(#ae-bg)"/>
+  <circle cx="240" cy="320" r="150" fill="#000000" opacity=".1"/>
+
+  <!-- дорога -->
+  <rect x="0" y="236" width="480" height="64" fill="#2A2F2B"/>
+  <line x1="0" y1="266" x2="480" y2="266" stroke="#F5C542" stroke-width="4" stroke-dasharray="26 20" opacity=".8"/>
+
+  <!-- машина 1 -->
+  <g transform="translate(40 150)">
+    <path d="M12 62 Q14 46 34 40 L50 20 Q56 12 68 12 L106 12 Q118 12 124 20 L138 40 Q156 46 158 58 L158 68 Q158 76 150 76 L20 76 Q12 76 12 68 Z" fill="url(#ae-car1)"/>
+    <path d="M56 24 Q60 19 68 19 L84 19 L84 42 L42 42 Z" fill="#DFF3E7"/>
+    <path d="M92 19 L106 19 Q113 19 117 25 L126 40 L92 40 Z" fill="#DFF3E7"/>
+    <circle cx="44" cy="76" r="14" fill="#23282C"/><circle cx="44" cy="76" r="6" fill="#8E9A90"/>
+    <circle cx="126" cy="76" r="14" fill="#23282C"/><circle cx="126" cy="76" r="6" fill="#8E9A90"/>
+  </g>
+  <!-- машина 2 -->
+  <g transform="translate(296 162)">
+    <path d="M12 62 Q14 46 34 40 L50 20 Q56 12 68 12 L106 12 Q118 12 124 20 L138 40 Q156 46 158 58 L158 68 Q158 76 150 76 L20 76 Q12 76 12 68 Z" fill="url(#ae-car2)"/>
+    <path d="M56 24 Q60 19 68 19 L84 19 L84 42 L42 42 Z" fill="#C9DCD1"/>
+    <path d="M92 19 L106 19 Q113 19 117 25 L126 40 L92 40 Z" fill="#C9DCD1"/>
+    <circle cx="44" cy="76" r="14" fill="#23282C"/><circle cx="44" cy="76" r="6" fill="#6E7A70"/>
+    <circle cx="126" cy="76" r="14" fill="#23282C"/><circle cx="126" cy="76" r="6" fill="#6E7A70"/>
+  </g>
+
+  <!-- водитель 1 -->
+  <g transform="translate(190 128)">
+    <rect x="-4" y="72" width="34" height="42" rx="12" fill="#1A4A32"/>
+    <circle cx="13" cy="52" r="17" fill="#F2C9A2"/>
+    <path d="M-3 48 Q-4 30 13 29 Q30 30 29 48 Q25 38 18 37 Q14 36.5 13 37 Q12 36.5 8 37 Q1 38 -3 48 Z" fill="#3A2C22"/>
+    <circle cx="7" cy="52" r="2" fill="#23282C"/><circle cx="19" cy="52" r="2" fill="#23282C"/>
+    <path d="M8 60 Q13 63 18 60" fill="none" stroke="#B4703F" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+  <!-- водитель 2 -->
+  <g transform="translate(258 136)">
+    <rect x="-4" y="72" width="34" height="42" rx="12" fill="#2E4A3A"/>
+    <circle cx="13" cy="52" r="17" fill="#E8B78D"/>
+    <path d="M-3 48 Q-4 30 13 29 Q30 30 29 48 Q25 38 18 37 Q14 36.5 13 37 Q12 36.5 8 37 Q1 38 -3 48 Z" fill="#23282C"/>
+    <circle cx="7" cy="52" r="2" fill="#23282C"/><circle cx="19" cy="52" r="2" fill="#23282C"/>
+    <path d="M8 60 Q13 63 18 60" fill="none" stroke="#B4703F" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- бланк европротокола -->
+  <g transform="translate(196 30) rotate(3)">
+    <rect x="0" y="0" width="96" height="110" rx="10" fill="url(#ae-paper)"/>
+    <rect x="8" y="8" width="80" height="94" rx="6" fill="none" stroke="#C9C3A8" stroke-width="1.4" opacity=".7"/>
+    <path d="M14 8 L14 22 L28 8 Z" fill="#2F8156"/>
+    <rect x="36" y="12" width="44" height="7" rx="3.5" fill="#2F8156"/>
+    <rect x="14" y="32" width="68" height="5" rx="2.5" fill="#D9D4BE"/>
+    <rect x="14" y="43" width="68" height="5" rx="2.5" fill="#E0DAC2"/>
+    <rect x="14" y="54" width="48" height="5" rx="2.5" fill="#E0DAC2"/>
+    <!-- схема ДТП в бланке -->
+    <rect x="14" y="66" width="68" height="26" rx="5" fill="#EEF5F0" stroke="#C9C3A8" stroke-width="1.2"/>
+    <rect x="20" y="72" width="18" height="10" rx="3" fill="#2F8156"/>
+    <rect x="56" y="76" width="18" height="10" rx="3" fill="#8E9A90" transform="rotate(24 65 81)"/>
+    <circle cx="76" cy="20" r="9" fill="#2F8156"/>
+    <path d="M72 20 L75 23 L81 16" fill="none" stroke="#F6F3E8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

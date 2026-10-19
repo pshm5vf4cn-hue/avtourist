@@ -1,0 +1,111 @@
+/* hero.css — оживление шапок внутренних страниц: градиентный h1 + уникальная
+   тематическая SVG-иллюстрация. Приоритет: класс pg-* текущей страницы
+   (ставит main.js), фолбэк — тематический класс body. */
+
+.page-hero { display: flex; align-items: center; gap: 28px; margin: 18px 0 8px; }
+.page-hero-text { flex: 1; min-width: 0; }
+.page-hero h1 {
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  line-height: 1.15;
+  margin: 0 0 10px;
+  background: linear-gradient(93deg, #08170F 0%, #0F3320 30%, #1E5C38 55%, #2F8156 78%, #43B873 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.page-hero-art {
+  flex: none;
+  width: 200px; height: 170px;
+  background-size: contain; background-repeat: no-repeat; background-position: center;
+  filter: drop-shadow(0 14px 22px rgba(23,59,40,.18));
+}
+
+/* ---------- Тематические фолбэки (остальные страницы) ---------- */
+body[class*="vozmeshchenie"] .page-hero-art, body[class*="vyplaty"] .page-hero-art,
+body[class*="uts"] .page-hero-art, body[class*="tseny"] .page-hero-art,
+body[class*="neustoyka"] .page-hero-art, body[class*="zanizhenie"] .page-hero-art,
+body[class*="limity"] .page-hero-art, body[class*="osago"] .page-hero-art,
+body[class*="kasko"] .page-hero-art, body[class*="franshiza"] .page-hero-art,
+body[class*="total"] .page-hero-art, body[class*="remont"] .page-hero-art,
+body[class*="evroprotokol"] .page-hero-art { background-image: url("/img/hero/money-rise.svg"); }
+
+body[class*="sud"] .page-hero-art, body[class*="spory"] .page-hero-art,
+body[class*="otvetstvennost"] .page-hero-art, body[class*="isk"] .page-hero-art,
+body[class*="zashchita"] .page-hero-art, body[class*="dela"] .page-hero-art,
+body[class*="moralny"] .page-hero-art, body[class*="pretenziya"] .page-hero-art { background-image: url("/img/hero/gavel-court.svg"); }
+
+body[class*="dokumenty"] .page-hero-art, body[class*="expertiza"] .page-hero-art,
+body[class*="nalog"] .page-hero-art, body[class*="voprosy"] .page-hero-art { background-image: url("/img/hero/docs-brand.svg"); }
+
+body[class*="vred"] .page-hero-art, body[class*="smert"] .page-hero-art,
+body[class*="yurist"] .page-hero-art, body[class*="kontakty"] .page-hero-art,
+body[class*="pokidanie"] .page-hero-art, body[class*="bez-spravki"] .page-hero-art,
+body[class*="hero"] .page-hero-art { background-image: url("/img/hero/headset-support.svg"); }
+
+/* страница контактов: theme-expertiza, но по смыслу — поддержка */
+main.plain-page .page-hero-art { background-image: url("/img/hero/headset-support.svg"); }
+
+/* ---------- Точное назначение по странице (pg-*) ---------- */
+body.pg-osago-neustoyka .page-hero-art,
+body.pg-kasko-vyplaty .page-hero-art,
+body.pg-osago-vyplaty-potsradavshemu .page-hero-art { background-image: url("/img/hero/money-rise.svg"); }
+
+body.pg-osago-zanizhenie-vyplaty .page-hero-art,
+body.pg-osago-nalog .page-hero-art { background-image: url("/img/hero/percent-scale.svg"); }
+
+body.pg-osago-limity .page-hero-art,
+body.pg-tseny .page-hero-art,
+body.pg-uslugi-vozmeshchenie-ushcherba .page-hero-art,
+body.pg-uslugi-vozmeshchenie-ushcherba-bez-uchyota-iznosa .page-hero-art,
+body.pg-uslugi-vozmeshchenie-ushcherba-sverkh-limita-osago .page-hero-art,
+body.pg-uslugi-uts .page-hero-art { background-image: url("/img/hero/contract-money.svg"); }
+
+body.pg-osago-otkaz-v-vyplate .page-hero-art,
+body.pg-kasko-bez-spravki-o-dtp .page-hero-art,
+body.pg-uslugi-vozmeshchenie-ushcherba-vinovnik-bez-strakhovki .page-hero-art,
+body.pg-otvetstvennost-pokidanie-mesta .page-hero-art { background-image: url("/img/hero/refusal-stop.svg"); }
+
+body.pg-osago-sroki .page-hero-art { background-image: url("/img/hero/clock-calendar.svg"); }
+
+body.pg-osago-remont .page-hero-art,
+body.pg-ekspertiza-posle-remonta .page-hero-art { background-image: url("/img/hero/repair-wrench.svg"); }
+
+body.pg-osago-regress .page-hero-art,
+body.pg-dela .page-hero-art,
+body.pg-uslugi-isk-k-strakhovoy .page-hero-art,
+body.pg-uslugi-dosudebnaya-pretenziya .page-hero-art,
+body.pg-uslugi-zashchita-vinovnika .page-hero-art,
+body.pg-dokumenty-isk-strakhovaya .page-hero-art { background-image: url("/img/hero/gavel-court.svg"); }
+
+body.pg-osago-evroprotokol .page-hero-art,
+body.pg-dokumenty-evroprotokol .page-hero-art { background-image: url("/img/hero/evroprotocol.svg"); }
+
+body.pg-dokumenty .page-hero-art,
+body.pg-dokumenty-pretenziya-osago .page-hero-art,
+body.pg-dokumenty-pretenziya-kasko .page-hero-art { background-image: url("/img/hero/docs-brand.svg"); }
+
+body.pg-kasko .page-hero-art,
+body.pg-osago .page-hero-art,
+body.pg-kasko-franshiza .page-hero-art { background-image: url("/img/hero/car-shield.svg"); }
+
+body.pg-kasko-total .page-hero-art { background-image: url("/img/hero/car-total.svg"); }
+
+body.pg-ekspertiza .page-hero-art,
+body.pg-ekspertiza-dlya-suda .page-hero-art,
+body.pg-uslugi-nezavisimaya-ekspertiza .page-hero-art { background-image: url("/img/hero/magnifier-car.svg"); }
+
+body.pg-uslugi-vred-zdorovyu .page-hero-art,
+body.pg-otvetstvennost-legkiy-vred .page-hero-art,
+body.pg-otvetstvennost-sredniy-vred .page-hero-art,
+body.pg-otvetstvennost-tyazhkiy-vred .page-hero-art,
+body.pg-uslugi-dtp-so-smertelnym-ishodom .page-hero-art,
+body.pg-uslugi-moralny-vred .page-hero-art { background-image: url("/img/hero/health-heart.svg"); }
+
+body.pg-kontakty .page-hero-art,
+body.pg-voprosy .page-hero-art,
+body.pg-yuristy .page-hero-art,
+body.pg-uslugi .page-hero-art,
+body.pg-uslugi-yurist-po-dtp .page-hero-art { background-image: url("/img/hero/headset-support.svg"); }
+
+@media (max-width: 720px) {
+  .page-hero { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .page-hero-art { width: 150px; height: 120px; order: -1; }
+}
