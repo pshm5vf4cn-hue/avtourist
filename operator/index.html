@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Помощник продажника — ДТП ЗАКОН · колл-центр</title>
+  <meta name="description" content="Внутренний инструмент колл-центра: опросник по ситуации клиента, заключение, скрипт записи к юристу, возражения, сообщения и обучение.">
+  <link rel="stylesheet" href="/operator.css">
+</head>
+<body>
+
+<header class="op-head">
+  <div class="op-wrap">
+    <div class="op-head-top">
+      <img src="/img/logo-mark-green.png" alt="" width="40" height="44">
+      <div>
+        <h1>Помощник продажника · ДТП ЗАКОН</h1>
+        <small>Инструмент первой линии: от заявки до записи на бесплатный разбор</small>
+      </div>
+      <div class="op-head-goal">
+        <b>Цель звонка — запись к юристу</b>
+        Не продаём, не консультируем по закону. Звоним в первые 5 минут после заявки.
+      </div>
+    </div>
+    <nav class="op-tabs" aria-label="Разделы">
+      <button class="op-tab active" data-tab="intro" type="button">Видеоурок</button>
+      <button class="op-tab" data-tab="call" type="button">Звонок · опросник</button>
+      <button class="op-tab" data-tab="objections" type="button">Возражения</button>
+      <button class="op-tab" data-tab="messages" type="button">Сообщения</button>
+      <button class="op-tab" data-tab="training" type="button">Обучение · презентация</button>
+    </nav>
+  </div>
+</header>
+
+<main class="op-main">
+  <div class="op-wrap">
+
+    <section data-panel="intro">
+      <div class="op-card op-intro">
+        <h2>Видеоурок перед началом работы</h2>
+        <p class="op-hint" id="introHint">Посмотрите вступление до конца, чтобы открыть обучение.</p>
+        <video class="op-intro-video" id="introVideo" controls playsinline preload="metadata" poster="/operator/operator-intro-poster.jpg">
+          <source src="/operator/operator-intro.mp4" type="video/mp4">
+          Ваш браузер не поддерживает видео.
+        </video>
+        <div class="op-intro-actions">
+          <span class="op-hint">Обязательно к первому просмотру.</span>
+          <button class="op-btn" id="startTraining" type="button" disabled>Начать обучение</button>
+        </div>
+      </div>
+    </section>
+
+    <section data-panel="call" hidden>
+      <div class="op-grid">
+        <div id="wizard"></div>
+        <div class="op-card op-result" id="result"></div>
+      </div>
+    </section>
+
+    <section data-panel="objections" hidden>
+      <div class="op-card">
+        <h2>Возражения и как с ними работать</h2>
+        <p class="op-hint">Формула: согласие → один аргумент → снова предложение времени. Два мягких возврата к записи достаточно, после второго «нет» закрываем вежливо. Нажмите на возражение, чтобы открыть скрипт.</p>
+      </div>
+      <div id="objections"></div>
+    </section>
+
+    <section data-panel="messages" hidden>
+      <div class="op-card">
+        <h2>Шаблоны сообщений</h2>
+        <p class="op-hint">WhatsApp / Telegram. Подставьте имя, дату и время — и копируйте. Напоминание перед звонком юриста обязательно: без него доходит меньше людей.</p>
+      </div>
+      <div id="messages"></div>
+    </section>
+
+    <section data-panel="training" hidden>
+      <div class="op-card">
+        <div class="op-slide" id="slide"></div>
+        <div class="op-slide-nav">
+          <button class="op-btn ghost" id="slidePrev" type="button">← Назад</button>
+          <span class="op-hint">Листайте кнопками или стрелками ← →</span>
+          <button class="op-btn" id="slideNext" type="button">Дальше →</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="op-foot">
+  <div class="op-wrap">Внутренний инструмент колл-центра · ДТП ЗАКОН, проект ООО «СИЛА ПРАВА» · 7 (495) 019-34-07</div>
+</footer>
+
+<script src="/operator.js"></script>
+</body>
+</html>
