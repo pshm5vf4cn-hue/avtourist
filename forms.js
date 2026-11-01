@@ -58,7 +58,7 @@
     }).then(function (r) { return r.json(); }).then(function (j) {
       // Цель Метрики form_submit — единая точка для всех форм: сервер подтвердил заявку.
       if (j && j.ok) {
-        try { if (window.ym) ym("COUNTER_ID", "reachGoal", "form_submit"); } catch (e) {}
+        try { if (window.ym) ym(113806242, "reachGoal", "form_submit"); } catch (e) {}
       }
       return !!(j && j.ok);
     }).catch(function () { return false; });

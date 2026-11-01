@@ -203,3 +203,16 @@ document.addEventListener('click', function (e) {
   var step = cardEl ? cardEl.offsetWidth + 18 : 320;
   track.scrollBy({ left: btn.classList.contains('nc-prev') ? -step : step, behavior: 'smooth' });
 });
+
+// Цели Метрики: клики по контактам (телефон, почта, мессенджеры)
+document.addEventListener('click', function (e) {
+  var a = e.target.closest ? e.target.closest('a[href]') : null;
+  if (!a || typeof window.ym !== 'function') return;
+  var h = a.getAttribute('href') || '';
+  var goal = null;
+  if (h.indexOf('tel:') === 0) goal = 'phone_click';
+  else if (h.indexOf('mailto:') === 0) goal = 'mail_click';
+  else if (h.indexOf('wa.me') !== -1) goal = 'whatsapp_click';
+  else if (h.indexOf('t.me') !== -1) goal = 'telegram_click';
+  if (goal) try { ym(113806242, 'reachGoal', goal); } catch (err) {}
+});
